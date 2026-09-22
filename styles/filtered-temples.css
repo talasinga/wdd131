@@ -1,0 +1,277 @@
+/* ================================
+   Temple Album - W04
+   filtered-temples.css
+================================ */
+
+/* ---------- General ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f7f9;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background-color: #17324d;
+    color: white;
+    padding: 1rem;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* ---------- Menu Button ---------- */
+
+#menu-button {
+    background-color: transparent;
+    color: white;
+
+    border: 2px solid white;
+    border-radius: 5px;
+
+    font-size: 1.5rem;
+    padding: 0.25rem 0.6rem;
+
+    cursor: pointer;
+}
+
+#menu-button:hover,
+#menu-button:focus {
+    background-color: white;
+    color: #17324d;
+}
+
+/* ---------- Navigation ---------- */
+
+nav {
+    max-width: 1200px;
+    margin: 1rem auto 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+nav button {
+    background-color: transparent;
+    color: white;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    padding: 0.7rem 1rem;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+nav button:hover,
+nav button:focus {
+    background-color: white;
+    color: #17324d;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+    color: #17324d;
+
+    font-size: 1.7rem;
+
+    margin: 1rem 0 1.5rem;
+}
+
+/* ---------- Temple Grid ---------- */
+
+.temples-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* ---------- Temple Card ---------- */
+
+.temple-card {
+    background-color: white;
+
+    border: 1px solid #d0d7de;
+    border-radius: 10px;
+
+    padding: 1rem;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+
+    overflow: hidden;
+}
+
+.temple-card h3 {
+    color: #17324d;
+
+    text-align: center;
+
+    font-size: 1.25rem;
+
+    margin: 0 0 1rem;
+}
+
+/* ---------- Temple Images ---------- */
+
+.temple-card img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    min-height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 1rem;
+}
+
+/* ---------- Temple Information ---------- */
+
+.temple-card p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.temple-card strong {
+    color: #17324d;
+}
+
+/* ---------- Image Error ---------- */
+
+.image-error {
+    background-color: #e9eef2;
+    min-height: 200px;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #17324d;
+    color: white;
+
+    text-align: center;
+
+    padding: 1.5rem 1rem;
+
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (min-width: 600px) {
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        gap: 0.75rem;
+    }
+
+    nav button {
+        padding: 0.6rem 1rem;
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    .temple-card img {
+        min-height: 220px;
+    }
+}
+
+/* ---------- Desktop ---------- */
+
+@media (min-width: 900px) {
+
+    header {
+        padding: 1.25rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        margin-top: 1rem;
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .temple-card {
+        padding: 1.2rem;
+    }
+
+    .temple-card img {
+        min-height: 200px;
+    }
+
+    .temple-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+    }
+}
+
+/* ---------- Large Desktop ---------- */
+
+@media (min-width: 1200px) {
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
