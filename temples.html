@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore a collection of temples from around the world in this responsive temple album.">
+    <meta name="author" content="Talasinga Tonga">
+
+    <title>Temple Album | WDD 131</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <span class="site-title">Temple Album</span>
+
+            <button
+                id="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navigation"
+            >
+                ☰
+            </button>
+        </div>
+
+        <nav id="navigation" aria-label="Main navigation">
+            <a href="temples.html">Home</a>
+            <a href="#old">Old</a>
+            <a href="#new">New</a>
+            <a href="#large">Large</a>
+            <a href="#small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+
+        <section class="temple-grid" aria-label="Temple pictures">
+
+            <figure>
+                <img
+                    src="images/temple1.jpg"
+                    alt="Beautiful temple building surrounded by trees"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                >
+                <figcaption>Hamilton New Zealand Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/temple2.jpg"
+                    alt="Temple building under a bright sky"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                >
+                <figcaption>Apia Samoa Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/temple3.jpg"
+                    alt="White temple building with landscaped grounds"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                >
+                <figcaption>Nuku'alofa Tonga Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/temple4.jpg"
+                    alt="Temple surrounded by green landscaping"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                >
+                <figcaption>Suva Fiji Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/temple5.jpg"
+                    alt="Temple with beautiful architectural details"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                >
+                <figcaption>Brisbane Australia Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/temple6.jpg"
+                    alt="Temple building with landscaped gardens"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                >
+                <figcaption>Sydney Australia Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/temple7.jpg"
+                    alt="Temple standing in a peaceful setting"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                >
+                <figcaption>Perth Australia Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/temple8.jpg"
+                    alt="Temple surrounded by a beautiful landscape"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                >
+                <figcaption>Adelaide Australia Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/temple9.jpg"
+                    alt="Temple building viewed from the front"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                >
+                <figcaption>Melbourne Australia Temple</figcaption>
+            </figure>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Talasinga Tonga | Tonga
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
