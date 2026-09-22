@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Explore temples from around the world with useful information about their location, dedication date, and size.">
+    <meta name="description" content="Explore a collection of temples from around the world with information about their location, dedication dates, and size.">
     <meta name="author" content="Talasinga Tonga">
 
     <title>Temple Album</title>
 
     <link rel="stylesheet" href="styles/filtered-temples.css">
-    <script src="scripts/filetred-temples.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
 </head>
 
 <body>
 
     <header>
         <div class="header-content">
-            <h1>Temple Album</h1>
+            <p class="site-title">Temple Album</p>
 
             <button id="menu-button"
                     aria-label="Open navigation menu"
@@ -29,19 +28,21 @@
         </div>
 
         <nav id="navigation">
-            <button type="button" data-filter="home">Home</button>
-            <button type="button" data-filter="old">Old</button>
-            <button type="button" data-filter="new">New</button>
-            <button type="button" data-filter="large">Large</button>
-            <button type="button" data-filter="small">Small</button>
+            <a href="#" data-filter="home">Home</a>
+            <a href="#" data-filter="old">Old</a>
+            <a href="#" data-filter="new">New</a>
+            <a href="#" data-filter="large">Large</a>
+            <a href="#" data-filter="small">Small</a>
         </nav>
     </header>
 
     <main>
+        <h1>Temple Album</h1>
+
         <h2>Temples Around the World</h2>
 
         <section id="temples-container" class="temples-grid">
-            <!-- JavaScript dynamically creates temple cards here -->
+            <!-- Temple cards are created by JavaScript -->
         </section>
     </main>
 
@@ -51,5 +52,4 @@
     </footer>
 
 </body>
-
 </html>
