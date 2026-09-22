@@ -1,0 +1,213 @@
+/* ------------------------------
+   General Page Styles
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    color: #1f2933;
+    background-color: #f4f7f9;
+}
+
+
+/* ------------------------------
+   Header
+------------------------------ */
+
+header {
+    background-color: #12355b;
+    color: #ffffff;
+}
+
+#course-title {
+    display: block;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+/* ------------------------------
+   Navigation
+------------------------------ */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background-color: #0b2239;
+}
+
+nav a {
+    display: block;
+    padding: 0.65rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #2f80a9;
+    border-color: #ffffff;
+}
+
+
+/* ------------------------------
+   Main Content
+------------------------------ */
+
+main {
+    width: min(1100px, 92%);
+    margin: 2rem auto;
+}
+
+h1 {
+    margin: 0 0 1.5rem;
+    text-align: center;
+    color: #12355b;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 2.4rem;
+}
+
+h2 {
+    margin: 0;
+    padding: 0.9rem 1rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #12355b;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5rem;
+}
+
+
+/* ------------------------------
+   Cards
+------------------------------ */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    overflow: hidden;
+    border: 1px solid #c7d2da;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.card-content {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding: 1.25rem;
+}
+
+.card-content img {
+    flex: 0 0 auto;
+    width: 220px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.text-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #12355b;
+}
+
+footer p {
+    margin: 0.35rem 0;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+    color: #e2e8f0;
+}
+
+
+/* ------------------------------
+   Responsive Design
+------------------------------ */
+
+@media (max-width: 800px) {
+    #course-title {
+        font-size: 1.6rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card-content {
+        flex-direction: column;
+    }
+
+    .card-content img {
+        width: 100%;
+        max-width: 300px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 500px) {
+    #course-title {
+        font-size: 1.35rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
